@@ -10,15 +10,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
- @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-      navbar?.classList.add('glass-nav', 'py-4');
-      navbar?.classList.remove('py-8');
-    } else {
-      navbar?.classList.remove('glass-nav', 'py-4');
-      navbar?.classList.add('py-8');
+   scrollTo(sectionId: string) {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }

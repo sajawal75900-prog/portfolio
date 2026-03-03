@@ -1,21 +1,21 @@
 <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-8">
   <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
     <div class="text-xl font-bold tracking-tighter flex items-center gap-2 group cursor-pointer">
-      <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:rotate-12 transition-transform">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="16 18 22 12 16 6"></polyline>
-          <polyline points="8 6 2 12 8 18"></polyline>
-        </svg>
-      </div>
-      <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 font-black uppercase">Engineer.ng</span>
+       <div class="flex items-center gap-3 group cursor-pointer">
+                <div class="relative w-10 h-10 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-blue-600 rounded-lg rotate-45 group-hover:rotate-90 transition-transform duration-500"></div>
+                    <span class="relative text-white font-black text-lg">S</span>
+                </div>
+                <span class="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-500">SAJAWAL.DEV</span>
+            </div>
     </div>
 
     <div class="hidden md:flex items-center gap-1 bg-white/5 p-1 rounded-full border border-white/10 backdrop-blur-md">
-      <a routerLink="/" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Home</a>
-      <a routerLink="/about" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">About</a>
-      <a routerLink="/skills" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Skills</a>
-      <a routerLink="/projects" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Projects</a>
-      <a routerLink="/contact" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Contact</a>
+      <a (click)="scrollTo('home')" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Home</a>
+      <a (click)="scrollTo('about')" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">About</a>
+      <a (click)="scrollTo('skills')" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Skills</a>
+      <a (click)="scrollTo('projects')" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Projects</a>
+      <a (click)="scrollTo('contact')" class="nav-link px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">Contact</a>
     </div>
 
     <a routerLink="/contact" class="px-6 py-2.5 bg-white text-slate-950 rounded-full text-sm font-bold transition-all hover:shadow-lg hover:scale-105 active:scale-95">Connect</a>
